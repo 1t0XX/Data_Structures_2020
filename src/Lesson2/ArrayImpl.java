@@ -2,6 +2,7 @@ package Lesson2;
 
 import java.util.Arrays;
 
+
 public class ArrayImpl<E extends Object& Comparable<? super E>> implements Array<E> {
 
     private static final int DEFAULT_CAPACITY = 16;
@@ -34,7 +35,7 @@ public class ArrayImpl<E extends Object& Comparable<? super E>> implements Array
 
 
 
-    protected void checkGrow(){
+    public void checkGrow(){
 
         if(size == data.length){
             data =grow();
